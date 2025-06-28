@@ -11,13 +11,9 @@ endif
 if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
 
 config ZMK_SPLIT
-	default y
-
-endif
-if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
-
-config ZMK_SPLIT
     default y
+
+
 
 if ZMK_DISPLAY
 
@@ -28,6 +24,9 @@ config SSD1306
     default y
 
 endif # ZMK_DISPLAY
+
+
+
 
 if LVGL
 
@@ -45,5 +44,7 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+
 
 endif
